@@ -7,10 +7,11 @@ public class Distributor {
     private int orderID;
     private static int nextId=0;
 
-    public Distributor(String distributorName, String distributorAddress, int distributorID)
+    public Distributor(String distributorName, String distributorAddress, int distributorID, double dprice)
     {
         this.distributorName = distributorName;
         this.distributorAddress = distributorAddress;
+        this.dprice = dprice;
         distributorID = nextId;
         nextId++;
 
@@ -65,20 +66,4 @@ public class Distributor {
     {   
      this.dprice = Dprice;
     }
-
-    public void addDistributor(String distributorName, String distributorAddress, String distributorID)
-    {
-
-    }
-
-    public void updateDistributor(String distributorName, String distributorAddress, String distributorID)
-    {
-        
-    }
-
-    public void removeDistributor(String distributorName)
-    {
-        
-    }
-
 }
